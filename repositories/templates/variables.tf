@@ -1,4 +1,4 @@
-# github_repository
+# github_repository_defaults
 
 variable "github_repository_defaults" {
   type = object({
