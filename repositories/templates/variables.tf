@@ -1,4 +1,4 @@
-# github_repository
+# github_repository_defaults
 
 variable "github_repository_defaults" {
   type = object({
@@ -87,5 +87,27 @@ variable "github_branch_protection" {
 
   default = {
     required_pull_request_reviews = {}
+  }
+}
+
+# github_project_column_defaults
+
+variable "github_project_column_defaults" {
+  type = object({
+    names = list(string)
+  })
+
+  default = {
+    names = ["To do", "In progress", "Closed"]
+  }
+}
+
+variable "github_project_column" {
+  type = object({
+    names = optional(list(string))
+  })
+
+  default = {
+    names = []
   }
 }
