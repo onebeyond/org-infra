@@ -9,7 +9,7 @@ locals {
 
 resource "github_branch_protection" "main" {
   depends_on    = [github_repository.repo]
-  repository_id = github_repository.repo.repo_id
+  repository_id = github_repository.repo.node_id
 
   pattern                         = "main"
   enforce_admins                  = true
