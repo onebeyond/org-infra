@@ -67,10 +67,20 @@ variable "github_repository" {
 
 variable "github_branch_protection_defaults" {
   type = object({
-    required_pull_request_reviews = map(string)
+    enforce_admins                  = bool,
+    allows_deletions                = bool,
+    allows_force_pushes             = bool,
+    require_signed_commits          = bool,
+    require_conversation_resolution = bool,
+    required_pull_request_reviews   = map(string)
   })
 
   default = {
+    enforce_admins                  = true
+    allows_deletions                = false
+    allows_force_pushes             = false
+    require_signed_commits          = false
+    require_conversation_resolution = true
     required_pull_request_reviews = {
       dismiss_stale_reviews           = true
       restrict_dismissals             = true
