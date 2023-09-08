@@ -7,6 +7,6 @@ module "repositories" {
   source = "./repositories"
 }
 
-module "teams" {
-  source = "./teams"
-}
+# module "teams" {
+#   source = "./teams"
+# }
