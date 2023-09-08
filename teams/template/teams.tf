@@ -1,14 +1,13 @@
-# Define GitHub teams in this folder
-resource "github_team" "team" {
-  name    = var.github_team_name
-  privacy = "closed"
-}
-
 locals {
   infra_team_users = [
     for user in var.github_users : user
     if contains(user.teams, var.github_team_name)
   ]
+}
+
+resource "github_team" "team" {
+  name    = var.github_team_name
+  privacy = "closed"
 }
 
 resource "github_team_membership" "team_memberships" {
