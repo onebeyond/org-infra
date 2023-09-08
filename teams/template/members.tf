@@ -6,3 +6,4 @@ resource "github_membership" "organization_memberships" {
   username = each.key
   role     = each.value
 }
+
