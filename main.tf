@@ -10,7 +10,6 @@ module "repositories" {
 module "teams" {
   source       = "./teams"
   github_users = var.github_users
-  # github_team_name = var.github_team_name
 }
 
 module "members" {

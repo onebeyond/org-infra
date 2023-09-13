@@ -1,5 +1,5 @@
 locals {
-  infra_team_users = [
+  team_users = [
     for user in var.github_users : user
     if contains(user.teams, var.github_team_name)
   ]
@@ -12,7 +12,7 @@ resource "github_team" "team" {
 
 resource "github_team_membership" "team_memberships" {
   for_each = {
-    for user in local.infra_team_users : user.username => user.teams
+    for user in local.team_users : user.username => user.teams
   }
 
   team_id  = github_team.team.id
