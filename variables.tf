@@ -15,22 +15,48 @@ variable "github_users" {
     username          = string
     organization_role = string
     memberships       = list(string)
-    teams             = list(string)
+    teams = list(object({
+      team      = string
+      team_role = string
+    }))
   }))
   default = [
     {
       username          = "Paula-Encinar"
       organization_role = "admin"
       memberships       = ["private"]
-      teams             = ["infra-team", "one-beyond-employees"]
+      teams = [
+        {
+          team      = "infra-team"
+          team_role = "maintainer"
+        },
+        {
+          team      = "one-beyond-employees"
+          team_role = "member"
+        }
+      ]
     },
-
     {
       username          = "Bounteous17"
       organization_role = "admin"
       memberships       = ["private"]
-      teams             = ["infra-team", "one-beyond-employees", "maintainers"]
+      teams = [
+        {
+          team      = "infra-team"
+          team_role = "maintainer"
+        },
+        {
+          team      = "one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "maintainers"
+          team_role = "maintainer"
+        }
+      ]
     },
   ]
 }
+
+
 

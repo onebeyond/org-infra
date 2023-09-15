@@ -1,8 +1,21 @@
 locals {
   team_users = [
     for user in var.github_users : user
-    if contains(user.teams, var.github_team_name)
+    if contains([for team in user.teams : team.team], var.github_team_name)
   ]
+}
+
+locals {
+  team_memberships = flatten([
+    for user in local.team_users :
+    [
+      {
+        username  = user.username
+        team_name = var.github_team_name
+        team_role = lookup({ for team in user.teams : team.team => team.team_role }, var.github_team_name, null)
+      }
+    ]
+  ])
 }
 
 resource "github_team" "team" {
@@ -12,13 +25,16 @@ resource "github_team" "team" {
 
 resource "github_team_membership" "team_memberships" {
   for_each = {
-    for user in local.team_users : user.username => user.teams
+    for membership in local.team_memberships :
+    "${membership.username}-${membership.team_name}" => membership
   }
 
   team_id  = github_team.team.id
-  username = each.key
-  role     = "member" #lookup({ for u in local.infra_team_users : u.username => u.role }, each.key, "member")
+  username = each.value.username
+  role     = each.value.team_role
 }
+
+
 
 
 
