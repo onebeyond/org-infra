@@ -21,6 +21,25 @@ variable "github_users" {
     }))
   }))
   default = [
+    # {
+    #   username          = "acalvom"
+    #   organization_role = "member"
+    #   memberships       = ["value"]
+    #   teams = [
+    #     {
+    #       team      = "value"
+    #       team_role = "value"
+    #     }
+    #   ]
+    # },
+
+
+
+
+
+
+
+
     {
       username          = "Paula-Encinar"
       organization_role = "admin"

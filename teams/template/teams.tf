@@ -19,8 +19,10 @@ locals {
 }
 
 resource "github_team" "team" {
-  name    = var.github_team_name
-  privacy = "closed"
+  name                      = var.github_team_name
+  description               = var.github_team_description
+  create_default_maintainer = var.github_team_default_maintainer
+  privacy                   = var.github_team_privacy
 }
 
 resource "github_team_membership" "team_memberships" {
