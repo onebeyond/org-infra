@@ -21,56 +21,51 @@ variable "github_users" {
     }))
   }))
   default = [
-    # {
-    #   username          = "acalvom"
-    #   organization_role = "member"
-    #   memberships       = ["value"]
-    #   teams = [
-    #     {
-    #       team      = "value"
-    #       team_role = "value"
-    #     }
-    #   ]
-    # },
-
-
-
-
-
-
-
-
     {
-      username          = "Paula-Encinar"
-      organization_role = "admin"
+      username          = "acalvom"
+      organization_role = "member"
       memberships       = ["private"]
       teams = [
         {
-          team      = "infra-team"
-          team_role = "maintainer"
+          team      = "team-one-beyond-employees"
+          team_role = "member"
         },
         {
-          team      = "one-beyond-employees"
+          team      = "team-shieldjs"
           team_role = "member"
         }
       ]
     },
     {
-      username          = "Bounteous17"
-      organization_role = "admin"
+      username          = "aldorea"
+      organization_role = "member"
       memberships       = ["private"]
       teams = [
         {
-          team      = "infra-team"
-          team_role = "maintainer"
+          team      = "team-one-beyond-employees"
+          team_role = "member"
         },
+      ]
+    },
+    {
+      username          = "alejandrosz"
+      organization_role = "member"
+      memberships       = ["private"]
+      teams = [
+      ]
+    },
+    {
+      username          = "alexpotterob"
+      organization_role = "member"
+      memberships       = ["private"]
+      teams = [
         {
-          team      = "one-beyond-employees"
+          team      = "team-one-beyond-employees"
           team_role = "member"
         },
         {
-          team      = "maintainers"
-          team_role = "maintainer"
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
         }
       ]
     },
