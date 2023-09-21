@@ -36,3 +36,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 /scripts
+<<<<<<< HEAD
+=======
+*.DS_Store
+>>>>>>> abf4ec19e0c61f57172f865dd7ce0106d90a97cd
