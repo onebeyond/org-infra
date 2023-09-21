@@ -8,5 +8,11 @@ module "repositories" {
 }
 
 module "teams" {
-  source = "./teams"
+  source       = "./teams"
+  github_users = var.github_users
+}
+
+module "members" {
+  source       = "./members"
+  github_users = var.github_users
 }
