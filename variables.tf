@@ -143,6 +143,51 @@ variable "github_users" {
       teams = [
       ]
     },
+    {
+      username          = "baumannzone"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-css-pills"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-human-resources"
+          team_role = "member"
+        },
+      ]
+    },
+    {
+      username          = "Betisman"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-ai"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-gratitude"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "maintainer"
+        },
+
+      ]
+
+
+    },
   ]
 }
 
