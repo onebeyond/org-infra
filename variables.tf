@@ -14,7 +14,7 @@ variable "github_users" {
   type = list(object({
     username          = string
     organization_role = string
-    memberships       = list(string)
+    memberships       = string
     teams = list(object({
       team      = string
       team_role = string
@@ -24,7 +24,7 @@ variable "github_users" {
     {
       username          = "acalvom"
       organization_role = "member"
-      memberships       = ["private"]
+      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -39,7 +39,7 @@ variable "github_users" {
     {
       username          = "aldorea"
       organization_role = "member"
-      memberships       = ["private"]
+      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -50,14 +50,14 @@ variable "github_users" {
     {
       username          = "alejandrosz"
       organization_role = "member"
-      memberships       = ["private"]
+      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "alexpotterob"
       organization_role = "member"
-      memberships       = ["private"]
+      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -69,11 +69,10 @@ variable "github_users" {
         }
       ]
     },
-
     {
       username          = "amit-k-patel"
       organization_role = "member"
-      memberships       = ["private"]
+      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk-maintainers"
@@ -84,7 +83,7 @@ variable "github_users" {
     {
       username          = "andriikaplanovskyi"
       organization_role = "member"
-      memberships       = ["private"]
+      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -96,7 +95,54 @@ variable "github_users" {
         }
       ]
     },
-
+    {
+      username          = "arturogbruno"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-css-pills"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "aslam-mohammed-onebeyond"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "AttilaDoro"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+      ]
+    },
+    {
+      username          = "barlakat"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
   ]
 }
 
