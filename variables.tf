@@ -69,6 +69,34 @@ variable "github_users" {
         }
       ]
     },
+
+    {
+      username          = "amit-k-patel"
+      organization_role = "member"
+      memberships       = ["private"]
+      teams = [
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "andriikaplanovskyi"
+      organization_role = "member"
+      memberships       = ["private"]
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk"
+          team_role = "member"
+        }
+      ]
+    },
+
   ]
 }
 
