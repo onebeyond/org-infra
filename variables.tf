@@ -185,8 +185,6 @@ variable "github_users" {
         },
 
       ]
-
-
     },
   ]
 }
