@@ -186,6 +186,111 @@ variable "github_users" {
 
       ]
     },
+    {
+      username          = "Borsana"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-monaco"
+          team_role = "member"
+        },
+      ]
+    },
+    {
+      username          = "borzav"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "Bounteous17"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-gratitude"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-infra"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-maintainers"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-triage"
+          team_role = "maintainer"
+        },
+      ]
+    },
+    {
+      username          = "brynhorsfield-ob"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "carpasse"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "cl00609"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "cressie176"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-external-maintainers"
+          team_role = "member"
+        },
+      ]
+    },
   ]
 }
 
