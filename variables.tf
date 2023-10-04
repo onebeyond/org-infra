@@ -291,6 +291,75 @@ variable "github_users" {
         },
       ]
     },
+    {
+      username          = "CristiTorrejon"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "csernokn123"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-devops"
+          team_role = "member"
+        },
+        {
+          team      = "team-ai"
+          team_role = "member"
+        },
+      ]
+    },
+    {
+      username          = "daniel-sipos"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "danieltoth55"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "DavidRuedaOB"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "dcsl-alexis"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-obelisk"
+          team_role = "maintainer"
+        }
+      ]
+    },
+    {
+      username          = "dhorvath-js"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
   ]
 }
 
