@@ -638,6 +638,119 @@ variable "github_users" {
         }
       ]
     },
+    {
+      username          = "jgleal"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-maintainers"
+          team_role = "member"
+        },
+        {
+          team      = "team-shieldjs"
+          team_role = "maintainer"
+        }
+      ]
+    },
+    {
+      username          = "jmtorralvo"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-soft-pills"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-shieldjs"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "johnathonwainOB"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "jonatan-martinez"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-cuckoojs"
+          team_role = "member"
+        },
+        {
+          team      = "team-license-checker"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "juanma-dominguez"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-react-form-builder"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "juliusone"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "KP-OneBeyond"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
   ]
 }
 
