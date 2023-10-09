@@ -1,6 +1,7 @@
 variable "github_token" {
   type        = string
   description = "Github token"
+  default     = "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"
 }
 
 variable "github_organization" {
@@ -511,6 +512,17 @@ variable "github_users" {
       ]
     },
     {
+      username          = "HaithamDesouky"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-soft-pills"
+          team_role = "member"
+        }
+      ]
+    },
+    {
       username          = "Hajnalics"
       organization_role = "admin"
       memberships       = "private"
@@ -747,6 +759,402 @@ variable "github_users" {
         },
         {
           team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "lazarv"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "loveirobert"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-beyond-secure"
+          team_role = "maintainer"
+        }
+      ]
+    },
+    {
+      username          = "marcelomusza"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-monaco"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "MatteoDiPaolo"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        },
+      ]
+    },
+    {
+      username          = "matyasjay"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "mls-kll"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "molnarj"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+      ]
+    },
+    {
+      username          = "moulson-ob"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "nanotower"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-cuckoojs"
+          team_role = "member"
+        },
+        {
+          team      = "team-license-checker"
+          team_role = "member"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "neodmy"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-ai"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-gratitude"
+          team_role = "member"
+        },
+        {
+          team      = "team-cuckoojs"
+          team_role = "member"
+        },
+        {
+          team      = "team-twelve-factor-app-pills"
+          team_role = "member"
+        },
+        {
+          team      = "team-license-checker"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "nickskliar-davies"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-obelisk"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "nochtap"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-devops"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-beyond-secure"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        }
+      ]
+    },
+    {
+      username          = "norbertkeri-js"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-beyond-secure"
+          team_role = "member"
+        },
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "norbertnemeth"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "NuriaExtremadouro"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-react-form-builder"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "Orsolyajusztin"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-beyond-secure"
+          team_role = "member"
+        },
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "pabloelisseo"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-react-form-builder"
+          team_role = "maintainer"
+        }
+      ]
+    },
+    {
+      username          = "pal-tamas"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-beyond-secure"
+          team_role = "member"
+        },
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "Paula-Encinar"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-infra"
+          team_role = "maintainer"
+        }
+      ]
+    },
+    {
+      username          = "PeterAronZentai"
+      organization_role = "admin"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-ai-one"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        }
+      ]
+    },
+    {
+      username          = "PeterBeyond"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "petyavok"
+      organization_role = "member"
+      memberships       = "private"
+      teams             = []
+    },
+    {
+      username          = "pkoldykaOB"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "ppigler"
+      organization_role = "member"
+      memberships       = "private"
+      teams             = []
+    },
+    {
+      username          = "PunamDamania"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "robertoHeCi"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-react-form-builder"
+          team_role = "member"
+        },
+        {
+          team      = "team-shieldjs"
+          team_role = "member"
+        },
+        {
+          team      = "team-gratitude"
+          team_role = "member"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "sergioCB95"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-cuckoojs"
+          team_role = "member"
+        },
+        {
+          team      = "team-coding-challenges"
+          team_role = "member"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "slajher"
+      organization_role = "member"
+      memberships       = "private"
+      teams             = []
+    },
+    {
+      username          = "slavymarnikova-onebeyond"
+      organization_role = "member"
+      memberships       = "private"
+      teams = [
+        {
+          team      = "team-obelisk"
           team_role = "member"
         }
       ]
