@@ -14,7 +14,6 @@ variable "github_users" {
   type = list(object({
     username          = string
     organization_role = string
-    memberships       = string
     teams = list(object({
       team      = string
       team_role = string
@@ -24,7 +23,6 @@ variable "github_users" {
     {
       username          = "acalvom"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -39,7 +37,6 @@ variable "github_users" {
     {
       username          = "aldorea"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -50,14 +47,12 @@ variable "github_users" {
     {
       username          = "alejandrosz"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "alexpotterob"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -72,7 +67,6 @@ variable "github_users" {
     {
       username          = "amit-k-patel"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk-maintainers"
@@ -83,7 +77,6 @@ variable "github_users" {
     {
       username          = "andriikaplanovskyi"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -98,7 +91,6 @@ variable "github_users" {
     {
       username          = "arturogbruno"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -113,7 +105,6 @@ variable "github_users" {
     {
       username          = "aslam-mohammed-onebeyond"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -128,7 +119,6 @@ variable "github_users" {
     {
       username          = "AttilaDoro"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -139,14 +129,12 @@ variable "github_users" {
     {
       username          = "barlakat"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "baumannzone"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -165,7 +153,6 @@ variable "github_users" {
     {
       username          = "Betisman"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -189,7 +176,6 @@ variable "github_users" {
     {
       username          = "Borsana"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-monaco"
@@ -200,14 +186,12 @@ variable "github_users" {
     {
       username          = "borzav"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "Bounteous17"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -238,7 +222,6 @@ variable "github_users" {
     {
       username          = "brynhorsfield-ob"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk"
@@ -253,7 +236,6 @@ variable "github_users" {
     {
       username          = "carpasse"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -268,7 +250,6 @@ variable "github_users" {
     {
       username          = "cl00609"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk"
@@ -283,7 +264,6 @@ variable "github_users" {
     {
       username          = "cressie176"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-external-maintainers"
@@ -294,14 +274,12 @@ variable "github_users" {
     {
       username          = "CristiTorrejon"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "csernokn123"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-devops"
@@ -316,28 +294,24 @@ variable "github_users" {
     {
       username          = "daniel-sipos"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "danieltoth55"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "DavidRuedaOB"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "dcsl-alexis"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -356,14 +330,12 @@ variable "github_users" {
     {
       username          = "dhorvath-js"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "Donivanes"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -378,7 +350,6 @@ variable "github_users" {
     {
       username          = "dustytrinkets"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -393,7 +364,6 @@ variable "github_users" {
     {
       username          = "eduvilla97"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -408,7 +378,6 @@ variable "github_users" {
     {
       username          = "elizabethLomb"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -423,7 +392,6 @@ variable "github_users" {
     {
       username          = "ElMehdiSmiri"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -438,7 +406,6 @@ variable "github_users" {
     {
       username          = "fabiomaistro"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -453,7 +420,6 @@ variable "github_users" {
     {
       username          = "Franky-OB"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -472,7 +438,6 @@ variable "github_users" {
     {
       username          = "GentooXativa"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -495,7 +460,6 @@ variable "github_users" {
     {
       username          = "guidesmithsbot"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-admins"
@@ -506,14 +470,12 @@ variable "github_users" {
     {
       username          = "habondavid"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "HaithamDesouky"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-soft-pills"
@@ -524,7 +486,6 @@ variable "github_users" {
     {
       username          = "Hajnalics"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-ai-one"
@@ -535,7 +496,6 @@ variable "github_users" {
     {
       username          = "inigomarquinez"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-admins"
@@ -574,21 +534,18 @@ variable "github_users" {
     {
       username          = "iripoli"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "JacopoValsecchiDCSLGS"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "jadorado"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -607,7 +564,6 @@ variable "github_users" {
     {
       username          = "JamesKirkbyKent"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -622,7 +578,6 @@ variable "github_users" {
     {
       username          = "jamieDavisOneBeyond"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -637,7 +592,6 @@ variable "github_users" {
     {
       username          = "JEBurnard-OneBeyond"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -652,7 +606,6 @@ variable "github_users" {
     {
       username          = "jgleal"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -671,7 +624,6 @@ variable "github_users" {
     {
       username          = "jmtorralvo"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -690,7 +642,6 @@ variable "github_users" {
     {
       username          = "johnathonwainOB"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -705,7 +656,6 @@ variable "github_users" {
     {
       username          = "jonatan-martinez"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -724,7 +674,6 @@ variable "github_users" {
     {
       username          = "juanma-dominguez"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-react-form-builder"
@@ -735,7 +684,6 @@ variable "github_users" {
     {
       username          = "juliusone"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -750,7 +698,6 @@ variable "github_users" {
     {
       username          = "KP-OneBeyond"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk"
@@ -765,14 +712,12 @@ variable "github_users" {
     {
       username          = "lazarv"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "loveirobert"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -787,7 +732,6 @@ variable "github_users" {
     {
       username          = "marcelomusza"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -802,7 +746,6 @@ variable "github_users" {
     {
       username          = "MatteoDiPaolo"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -813,28 +756,24 @@ variable "github_users" {
     {
       username          = "matyasjay"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "mls-kll"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "molnarj"
       organization_role = "member"
-      memberships       = "private"
       teams = [
       ]
     },
     {
       username          = "moulson-ob"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk"
@@ -849,7 +788,6 @@ variable "github_users" {
     {
       username          = "nanotower"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -872,7 +810,6 @@ variable "github_users" {
     {
       username          = "neodmy"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -903,7 +840,6 @@ variable "github_users" {
     {
       username          = "nickskliar-davies"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -918,7 +854,6 @@ variable "github_users" {
     {
       username          = "nochtap"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-devops"
@@ -937,7 +872,6 @@ variable "github_users" {
     {
       username          = "norbertkeri-js"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-beyond-secure"
@@ -952,7 +886,6 @@ variable "github_users" {
     {
       username          = "norbertnemeth"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -963,7 +896,6 @@ variable "github_users" {
     {
       username          = "NuriaExtremadouro"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-react-form-builder"
@@ -974,7 +906,6 @@ variable "github_users" {
     {
       username          = "Orsolyajusztin"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-beyond-secure"
@@ -989,7 +920,6 @@ variable "github_users" {
     {
       username          = "pabloelisseo"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -1004,7 +934,6 @@ variable "github_users" {
     {
       username          = "pal-tamas"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-beyond-secure"
@@ -1019,7 +948,6 @@ variable "github_users" {
     {
       username          = "Paula-Encinar"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -1034,7 +962,6 @@ variable "github_users" {
     {
       username          = "PeterAronZentai"
       organization_role = "admin"
-      memberships       = "private"
       teams = [
         {
           team      = "team-ai-one"
@@ -1049,7 +976,6 @@ variable "github_users" {
     {
       username          = "PeterBeyond"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk-maintainers"
@@ -1060,13 +986,11 @@ variable "github_users" {
     {
       username          = "petyavok"
       organization_role = "member"
-      memberships       = "private"
       teams             = []
     },
     {
       username          = "pkoldykaOB"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk-maintainers"
@@ -1077,13 +1001,11 @@ variable "github_users" {
     {
       username          = "ppigler"
       organization_role = "member"
-      memberships       = "private"
       teams             = []
     },
     {
       username          = "PunamDamania"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk-maintainers"
@@ -1094,7 +1016,6 @@ variable "github_users" {
     {
       username          = "robertoHeCi"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -1121,7 +1042,6 @@ variable "github_users" {
     {
       username          = "sergioCB95"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-one-beyond-employees"
@@ -1144,13 +1064,11 @@ variable "github_users" {
     {
       username          = "slajher"
       organization_role = "member"
-      memberships       = "private"
       teams             = []
     },
     {
       username          = "slavymarnikova-onebeyond"
       organization_role = "member"
-      memberships       = "private"
       teams = [
         {
           team      = "team-obelisk"
@@ -1158,6 +1076,97 @@ variable "github_users" {
         }
       ]
     },
+    {
+      username          = "totegsito"
+      organization_role = "member"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-coding-challenges"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "UlisesGascon"
+      organization_role = "admin"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-admins"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-external-maintainers"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-license-checker"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-maintainers"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-react-form-builder"
+          team_role = "maintainer"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "maintainer"
+        },
+      ]
+    },
+    {
+      username          = "vargaLaszlo"
+      organization_role = "member"
+      teams             = []
+    },
+    {
+      username          = "ViktorIlles"
+      organization_role = "member"
+      teams             = []
+    },
+    {
+      username          = "w3dani"
+      organization_role = "member"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-cuckoojs"
+          team_role = "member"
+        },
+        {
+          team      = "team-maintainers"
+          team_role = "member"
+        }
+      ]
+    },
+    {
+      username          = "Xexuline"
+      organization_role = "member"
+      teams             = []
+    },
+    {
+      username          = "zsolt-nagy95"
+      organization_role = "member"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        }
+      ]
+    }
   ]
 }
 
