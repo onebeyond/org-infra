@@ -1,7 +1,6 @@
 variable "github_token" {
   type        = string
   description = "Github token"
-  default     = "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"
 }
 
 variable "github_organization" {
