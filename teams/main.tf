@@ -176,3 +176,10 @@ module "team-twelve-factor-app-pills" {
   github_team_description = "Team to work on the 12-factor app pills"
   github_users            = var.github_users
 }
+
+module "team-actions" {
+  source                  = "./template"
+  github_team_name        = "team-actions"
+  github_team_description = "Team to work on shared GitHub actions"
+  github_users            = var.github_users
+}
