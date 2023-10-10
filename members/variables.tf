@@ -3,7 +3,6 @@ variable "github_users" {
   type = list(object({
     username          = string
     organization_role = string
-    memberships       = list(string)
     teams = list(object({
       team      = string
       team_role = string
