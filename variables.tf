@@ -506,6 +506,10 @@ variable "github_users" {
           team_role = "maintainer"
         },
         {
+          team      = "team-actions"
+          team_role = "maintainer"
+        },
+        {
           team      = "team-cuckoojs"
           team_role = "maintainer"
         },
@@ -792,6 +796,10 @@ variable "github_users" {
         {
           team      = "team-one-beyond-employees"
           team_role = "member"
+        },
+        {
+          team      = "team-actions"
+          team_role = "maintainer"
         },
         {
           team      = "team-cuckoojs"
