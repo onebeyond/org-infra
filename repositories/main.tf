@@ -5,7 +5,6 @@ module "repository-warthog_load_testing" {
     name       = "warthog-load-testing"
     visibility = "public"
   }
-
 }
 
 module "repository-xk6-mongo" {
@@ -14,5 +13,20 @@ module "repository-xk6-mongo" {
     name       = "xk6-mongo"
     visibility = "public"
   }
+}
 
+module "repository-actions" {
+  source = "./templates"
+  github_repository = {
+    name       = "actions"
+    visibility = "public"
+  }
+}
+
+module "repository-morning-slackbot" {
+  source = "./templates"
+  github_repository = {
+    name       = "morning-slackbot"
+    visibility = "public"
+  }
 }
