@@ -7,6 +7,7 @@ locals {
 
 resource "github_repository" "repo" {
   name                   = local.github_repository.name
+  description            = local.github_repository.description
   archive_on_destroy     = local.github_repository.archive_on_destroy
   allow_auto_merge       = local.github_repository.allow_auto_merge
   allow_merge_commit     = local.github_repository.allow_merge_commit
