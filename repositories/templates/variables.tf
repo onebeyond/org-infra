@@ -3,6 +3,7 @@
 variable "github_repository_defaults" {
   type = object({
     name                            = optional(string),
+    description                     = string
     archive_on_destroy              = bool,
     allow_auto_merge                = bool,
     allow_merge_commit              = bool,
@@ -31,6 +32,7 @@ variable "github_repository_defaults" {
 
   default = {
     archive_on_destroy              = true,
+    description                     = ""
     allow_auto_merge                = false,
     allow_merge_commit              = false,
     allow_rebase_merge              = true,
@@ -120,4 +122,15 @@ variable "github_project_column" {
   default = {
     names = []
   }
+}
+
+# github_teams_repository
+
+variable "github_teams_repository" {
+  type = list(object({
+    team_id    = string
+    permission = string
+  }))
+
+  default = []
 }

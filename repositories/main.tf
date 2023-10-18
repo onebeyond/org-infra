@@ -5,6 +5,12 @@ module "repository-warthog_load_testing" {
     name       = "warthog-load-testing"
     visibility = "public"
   }
+
+  github_teams_repository = [{
+    team_id    = "team-triage"
+    permission = "triage"
+  }]
+
 }
 
 module "repository-xk6-mongo" {
