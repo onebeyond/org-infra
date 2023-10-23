@@ -936,6 +936,10 @@ variable "github_users" {
         {
           team      = "team-react-form-builder"
           team_role = "maintainer"
+        },
+        {
+          team      = "team-actions"
+          team_role = "member"
         }
       ]
     },
