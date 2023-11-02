@@ -134,3 +134,35 @@ variable "github_teams_repository" {
 
   default = []
 }
+
+# github_issue_label
+
+variable "github_issue_label_defaults" {
+  type = list(object({
+    name  = string
+    color = string
+  }))
+
+  default = [
+    {
+      name  = "bug",
+      color = "cc0066"
+    },
+    {
+      name  = "fix",
+      color = "ff99ff"
+    },
+    {
+      name  = "improvements"
+      color = "ff8000"
+    },
+    {
+      name  = "feature"
+      color = "00cc99"
+    },
+    {
+      name  = "refactor"
+      color = "3399ff"
+    }
+  ]
+}

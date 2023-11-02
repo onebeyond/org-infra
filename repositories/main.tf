@@ -1,5 +1,5 @@
 
-module "repository-warthog_load_testing" {
+module "warthog_load_testing" {
   source = "./templates"
   github_repository = {
     name       = "warthog-load-testing"
@@ -12,7 +12,7 @@ module "repository-warthog_load_testing" {
   }]
 }
 
-module "repository-xk6-mongo" {
+module "xk6-mongo" {
   source = "./templates"
   github_repository = {
     name       = "xk6-mongo"
@@ -20,7 +20,7 @@ module "repository-xk6-mongo" {
   }
 }
 
-module "repository-actions" {
+module "actions" {
   source = "./templates"
   github_repository = {
     name        = "actions"
@@ -34,7 +34,7 @@ module "repository-actions" {
   }]
 }
 
-module "repository-morning-slackbot" {
+module "morning-slackbot" {
   source = "./templates"
   github_repository = {
     name        = "morning-slackbot"
