@@ -166,3 +166,11 @@ variable "github_issue_label_defaults" {
     }
   ]
 }
+
+# github_repository_topics
+
+variable "github_repository_topics" {
+  type = list(string)
+
+  default = []
+}
