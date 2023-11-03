@@ -1178,6 +1178,16 @@ variable "github_users" {
           team_role = "member"
         }
       ]
+    },
+    {
+      username          = "matthewtoghill"
+      organization_role = "member"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        }
+      ]
     }
   ]
 }
