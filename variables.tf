@@ -842,6 +842,10 @@ variable "github_users" {
         {
           team      = "team-license-checker"
           team_role = "member"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "member"
         }
       ]
     },
@@ -1188,7 +1192,21 @@ variable "github_users" {
           team_role = "member"
         }
       ]
-    }
+    },
+    {
+      username          = "LonelyPrincess"
+      organization_role = "member"
+      teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
+        {
+          team      = "team-systemic"
+          team_role = "member"
+        }
+      ]
+    },
   ]
 }
 
