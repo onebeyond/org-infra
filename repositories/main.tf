@@ -7,7 +7,7 @@ module "warthog_load_testing" {
   }
 
   github_teams_repository = [{
-    team_id    = "team-triage"
+    team_id    = var.teams-name.team-triage
     permission = "triage"
   }]
 
@@ -35,7 +35,7 @@ module "actions" {
   }
 
   github_teams_repository = [{
-    team_id    = "team-actions"
+    team_id    = var.teams-name.team-actions
     permission = "maintain"
   }]
 
@@ -52,9 +52,48 @@ module "morning-slackbot" {
   }
 
   github_teams_repository = [{
-    team_id    = "team-one-beyond-employees"
+    team_id    = var.teams-name.team-one-beyond-employees
     permission = "maintain"
   }]
 
   github_repository_topics = ["slack", "bot"]
+}
+
+module "rascal" {
+  source = "./templates"
+
+  github_repository = {
+    name        = "rascal"
+    description = "A config driven wrapper for amqp.node supporting multi-host connections, automatic error recovery, redelivery flood protection, transparent encryption / decryption and channel pooling."
+    visibility  = "public"
+    pages = {
+      source = {
+        branch = "master"
+        path   = "/"
+      }
+    }
+  }
+
+  github_branch_protection = {
+    required_pull_request_reviews = {
+      required_approving_review_count = 1
+    }
+  }
+
+  github_teams_repository = [
+    {
+      team_id    = var.teams-name.team-admins
+      permission = "admin"
+    },
+    {
+      team_id    = var.teams-name.team-maintainers
+      permission = "admin"
+    },
+    {
+      team_id    = var.teams-name.team-triage
+      permission = "triage"
+    },
+  ]
+
+  github_repository_topics = ["rascal"]
 }

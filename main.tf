@@ -4,7 +4,8 @@ provider "github" {
 }
 
 module "repositories" {
-  source = "./repositories"
+  source     = "./repositories"
+  teams-name = module.teams.teams_names
 }
 
 module "teams" {

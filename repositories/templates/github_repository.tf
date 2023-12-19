@@ -25,4 +25,14 @@ resource "github_repository" "repo" {
   is_template            = local.github_repository.is_template
   visibility             = local.github_repository.visibility
   vulnerability_alerts   = local.github_repository.vulnerability_alerts
+
+  dynamic "pages" {
+    for_each = local.github_repository.pages != null ? [local.github_repository.pages] : []
+    content {
+      source {
+        branch = local.github_repository.pages.source.branch
+        path   = local.github_repository.pages.source.path
+      }
+    }
+  }
 }

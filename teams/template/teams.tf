@@ -25,6 +25,10 @@ resource "github_team" "team" {
   privacy                   = var.github_team_privacy
 }
 
+output "github_team_name" {
+  value = github_team.team.name
+}
+
 resource "github_team_membership" "team_memberships" {
   for_each = {
     for membership in local.team_memberships :

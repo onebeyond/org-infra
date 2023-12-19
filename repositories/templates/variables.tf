@@ -27,7 +27,8 @@ variable "github_repository_defaults" {
     allows_force_pushes             = bool,
     require_signed_commits          = bool,
     require_conversation_resolution = bool,
-    required_status_checks          = bool
+    required_status_checks          = bool,
+    pages                           = any
   })
 
   default = {
@@ -40,7 +41,7 @@ variable "github_repository_defaults" {
     allow_update_branch             = false,
     archived                        = false,
     auto_init                       = false,
-    delete_branch_on_merge          = false,
+    delete_branch_on_merge          = true,
     has_discussions                 = false,
     has_downloads                   = true,
     has_issues                      = true,
@@ -55,12 +56,13 @@ variable "github_repository_defaults" {
     allows_force_pushes             = false,
     require_signed_commits          = true,
     require_conversation_resolution = true,
-    required_status_checks          = true
+    required_status_checks          = true,
+    pages                           = null
   }
 }
 
 variable "github_repository" {
-  type = map(string)
+  type = any
 
   default = {}
 }

@@ -183,3 +183,34 @@ module "team-actions" {
   github_team_description = "Team to work on shared GitHub actions"
   github_users            = var.github_users
 }
+
+output "teams_names" {
+  value = {
+    "team-admins"                  = module.team-admins.github_team_name
+    "team-ai"                      = module.team-ai.github_team_name
+    "team-ai-one"                  = module.team-ai-one.github_team_name
+    "team-beyond-secure"           = module.team-beyond-secure.github_team_name
+    "team-coding-challenges"       = module.team-coding-challenges.github_team_name
+    "team-css-pills"               = module.team-css-pills.github_team_name
+    "team-cuckoojs"                = module.team-cuckoojs.github_team_name
+    "team-devops"                  = module.team-devops.github_team_name
+    "team-external-maintainers"    = module.team-external-maintainers.github_team_name
+    "team-gratitude"               = module.team-gratitude.github_team_name
+    "team-helm"                    = module.team-helm.github_team_name
+    "team-human-resources"         = module.team-human-resources.github_team_name
+    "team-infra"                   = module.team-infra.github_team_name
+    "team-license-checker"         = module.team-license-checker.github_team_name
+    "team-maintainers"             = module.team-maintainers.github_team_name
+    "team-monaco"                  = module.team-monaco.github_team_name
+    "team-obelisk"                 = module.team-obelisk.github_team_name
+    "team-obelisk-maintainers"     = module.team-obelisk-maintainers.github_team_name
+    "team-one-beyond-employees"    = module.team-one-beyond-employees.github_team_name
+    "team-react-form-builder"      = module.team-react-form-builder.github_team_name
+    "team-shieldjs"                = module.team-shieldjs.github_team_name
+    "team-soft-pills"              = module.team-soft-pills.github_team_name
+    "team-systemic"                = module.team-systemic.github_team_name
+    "team-triage"                  = module.team-triage.github_team_name
+    "team-twelve-factor-app-pills" = module.team-twelve-factor-app-pills.github_team_name
+    "team-actions"                 = module.team-actions.github_team_name
+  }
+}

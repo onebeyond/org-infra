@@ -16,3 +16,10 @@ You can test the Terraform code locally by running the following commands (you n
 terraform init
 terraform plan
 ```
+
+## Importing a repository
+
+```bash
+terraform import module.repositories.module.rascal.github_repository.repo rascal
+terraform import module.repositories.module.rascal.github_branch_protection.main rascal:master
+```
