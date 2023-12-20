@@ -10,7 +10,7 @@ You need to have Terraform >= 1.6 installed on your machine. You can download it
 
 ## Testing locally
 
-You can test the Terraform code locally by running the following commands (you need a valid Github token):
+You can test the Terraform code locally by running the following commands (you need a valid GitHub token):
 
 ```bash
 terraform init

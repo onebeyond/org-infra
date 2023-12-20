@@ -97,3 +97,38 @@ module "rascal" {
 
   github_repository_topics = ["rascal"]
 }
+
+module "cybersecurity-handbook" {
+  source = "./templates"
+
+  github_repository = {
+    name                 = "cybersecurity-handbook"
+    description          = "Cybersecurity handbook by One Beyond"
+    visibility           = "public"
+    homepage_url         = "https://cybersecurityhandbook.dev/"
+    vulnerability_alerts = true
+  }
+
+  github_branch_protection = {
+    required_pull_request_reviews = {
+      required_approving_review_count = 1
+    }
+  }
+
+  github_teams_repository = [
+    {
+      team_id    = var.teams-name.team-admins
+      permission = "admin"
+    },
+    {
+      team_id    = var.teams-name.team-maintainers
+      permission = "admin"
+    },
+    {
+      team_id    = var.teams-name.team-triage
+      permission = "triage"
+    },
+  ]
+
+  github_repository_topics = ["cybersecurity", "handbook"]
+}

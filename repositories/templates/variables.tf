@@ -28,7 +28,8 @@ variable "github_repository_defaults" {
     require_signed_commits          = bool,
     require_conversation_resolution = bool,
     required_status_checks          = bool,
-    pages                           = any
+    pages                           = any,
+    homepage_url                    = string
   })
 
   default = {
@@ -57,7 +58,8 @@ variable "github_repository_defaults" {
     require_signed_commits          = true,
     require_conversation_resolution = true,
     required_status_checks          = true,
-    pages                           = null
+    pages                           = null,
+    homepage_url                    = null
   }
 }
 
