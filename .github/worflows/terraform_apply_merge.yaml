@@ -1,0 +1,44 @@
+name: Plan / Apply On Main Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  apply:
+    name: Apply Changes on Main Push
+    runs-on: ubuntu-20.04
+    env:
+      TF_VAR_allowed_account_id: ${{ secrets.ALLOWED_ACCOUNT_ID }}
+      TF_VAR_github_token: ${{ secrets.TOKEN }}
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.6
+
+      - name: Terraform Init
+        run: |
+          terraform init \
+            -backend-config="access_key=${AWS_ACCESS_KEY_ID}" \
+            -backend-config="secret_key=${AWS_SECRET_ACCESS_KEY}" \
+            -input=false \
+            -no-color
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Run Terraform Plan
+        run: terraform plan -input=false -no-color -out=tfplan
+
+      - name: Inform on PR that Plan is Complete
+        run: |
+          COMMENT="***Terraform plan complete***\nResults will display here momentarily..."
+          curl -X POST -H "Authorization: Bearer ${{ secrets.TOKEN }}" -d "{\"body\":\"$COMMENT\"}" "https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${{ github.event.pull_request.number }}/comments"
+
+      - name: Apply Terraform Changes
+        run: terraform apply -auto-approve tfplan
