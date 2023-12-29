@@ -635,7 +635,7 @@ variable "github_users" {
         },
         {
           team      = "team-soft-pills"
-          team_role = "maintainer"
+          team_role = "admin"
         },
         {
           team      = "team-shieldjs"
