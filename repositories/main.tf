@@ -122,7 +122,7 @@ module "cybersecurity-handbook" {
     },
     {
       team_id    = var.teams-name.team-maintainers
-      permission = "admin"
+      permission = "maintain"
     },
     {
       team_id    = var.teams-name.team-triage
@@ -131,4 +131,30 @@ module "cybersecurity-handbook" {
   ]
 
   github_repository_topics = ["cybersecurity", "handbook"]
+}
+
+module "systemic" {
+  source = "./templates"
+
+  github_repository = {
+    name                 = "systemic"
+    description          = "📦 A minimal dependency injection framework."
+    visibility           = "public"
+    homepage_url         = "https://onebeyond.github.io/systemic"
+    vulnerability_alerts = true
+    pages = {
+      source = {
+        branch = "master"
+        path   = "/docs"
+      }
+    }
+  }
+
+  github_branch_protection = {
+    required_pull_request_reviews = {
+      required_approving_review_count = 1
+    }
+  }
+
+  github_repository_topics = ["nodejs", "dependency-injection"]
 }
