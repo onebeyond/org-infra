@@ -22,6 +22,8 @@ module "xk6-mongo" {
     visibility = "public"
   }
 
+  github_branch_default = "master"
+
   github_repository_topics = ["load-testing", "golang", "mongo", "atlas"]
 }
 
@@ -73,6 +75,8 @@ module "rascal" {
       }
     }
   }
+
+  github_branch_default = "master"
 
   github_branch_protection = {
     required_pull_request_reviews = {

@@ -106,6 +106,11 @@ variable "github_branch_protection" {
   }
 }
 
+variable "github_branch_default" {
+  type    = string
+  default = "main"
+}
+
 # github_project_column_defaults
 
 variable "github_project_column_defaults" {
