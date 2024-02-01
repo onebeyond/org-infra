@@ -17,6 +17,12 @@ terraform init
 terraform plan
 ```
 
+Debug modules:
+
+```bash
+terraform plan -target=module.repositories
+```
+
 ## Importing a repository
 
 ```bash
