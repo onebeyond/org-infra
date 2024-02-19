@@ -3,6 +3,7 @@
 variable "github_repository_defaults" {
   type = object({
     name                            = optional(string),
+    default_branch                  = string,
     description                     = string
     archive_on_destroy              = bool,
     allow_auto_merge                = bool,
@@ -21,7 +22,6 @@ variable "github_repository_defaults" {
     is_template                     = bool,
     vulnerability_alerts            = bool,
     visibility                      = string,
-    pattern                         = string,
     enforce_admins                  = bool,
     allows_deletions                = bool,
     allows_force_pushes             = bool,
@@ -33,6 +33,7 @@ variable "github_repository_defaults" {
   })
 
   default = {
+    default_branch                  = "main",
     archive_on_destroy              = true,
     description                     = ""
     allow_auto_merge                = false,
@@ -51,7 +52,6 @@ variable "github_repository_defaults" {
     is_template                     = false,
     vulnerability_alerts            = false,
     visibility                      = "public",
-    pattern                         = "main",
     enforce_admins                  = true,
     allows_deletions                = false,
     allows_force_pushes             = false,
@@ -79,6 +79,7 @@ variable "github_branch_protection_defaults" {
     require_signed_commits          = bool,
     require_conversation_resolution = bool,
     required_pull_request_reviews   = map(string)
+    pull_request_bypassers          = set(string)
   })
 
   default = {
@@ -93,16 +94,20 @@ variable "github_branch_protection_defaults" {
       required_approving_review_count = 2
       require_last_push_approval      = true
     }
+    pull_request_bypassers = ["/Bounteous17"]
   }
 }
 
 variable "github_branch_protection" {
   type = object({
     required_pull_request_reviews = optional(map(string), {})
+    pull_request_bypassers        = optional(set(string), [])
   })
 
   default = {
+    default_branch                = "main"
     required_pull_request_reviews = {}
+    pull_request_bypassers        = []
   }
 }
 

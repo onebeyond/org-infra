@@ -18,28 +18,12 @@ module "xk6-mongo" {
   source = "./templates"
 
   github_repository = {
-    name       = "xk6-mongo"
-    visibility = "public"
+    name           = "xk6-mongo"
+    default_branch = "master"
+    visibility     = "public"
   }
 
   github_repository_topics = ["load-testing", "golang", "mongo", "atlas"]
-}
-
-module "actions" {
-  source = "./templates"
-
-  github_repository = {
-    name        = "actions"
-    description = "A collection of GitHub actions to use in our organization"
-    visibility  = "public"
-  }
-
-  github_teams_repository = [{
-    team_id    = var.teams-name.team-actions
-    permission = "maintain"
-  }]
-
-  github_repository_topics = ["github", "automations", "pipeline"]
 }
 
 module "morning-slackbot" {
@@ -63,9 +47,10 @@ module "rascal" {
   source = "./templates"
 
   github_repository = {
-    name        = "rascal"
-    description = "A config driven wrapper for amqp.node supporting multi-host connections, automatic error recovery, redelivery flood protection, transparent encryption / decryption and channel pooling."
-    visibility  = "public"
+    name           = "rascal"
+    default_branch = "master"
+    description    = "A config driven wrapper for amqp.node supporting multi-host connections, automatic error recovery, redelivery flood protection, transparent encryption / decryption and channel pooling."
+    visibility     = "public"
     pages = {
       source = {
         branch = "master"
@@ -75,6 +60,7 @@ module "rascal" {
   }
 
   github_branch_protection = {
+    pull_request_bypassers = ["/cressie176"]
     required_pull_request_reviews = {
       required_approving_review_count = 1
     }
@@ -138,6 +124,7 @@ module "systemic" {
 
   github_repository = {
     name                 = "systemic"
+    default_branch       = "master"
     description          = "📦 A minimal dependency injection framework."
     visibility           = "public"
     homepage_url         = "https://onebeyond.github.io/systemic"
