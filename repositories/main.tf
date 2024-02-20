@@ -145,3 +145,29 @@ module "systemic" {
 
   github_repository_topics = ["nodejs", "dependency-injection"]
 }
+
+module "agnostic-cms-harmonizer" {
+  source = "./templates"
+
+  github_repository = {
+    name                 = "agnostic-cms-harmonizer"
+    description          = "Library to manage the communication with any CMS agnostic to the user"
+    visibility           = "public"
+    vulnerability_alerts = true
+    homepage_url         = "https://onebeyond.github.io/agnostic-cms-harmonizer/"
+    pages = {
+      source = {
+        branch = "gh-pages"
+        path   = "/"
+      }
+    }
+  }
+
+  github_branch_protection = {
+    required_pull_request_reviews = {
+      required_approving_review_count = 1
+    }
+  }
+
+  github_repository_topics = ["nodejs", "cms", "agnostic", "npm", "package"]
+}
