@@ -1,7 +1,7 @@
 locals {
   github_repository = merge(
     var.github_repository_defaults,
-    var.github_repository
+    var.github_repository,
   )
 }
 
