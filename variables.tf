@@ -761,6 +761,10 @@ variable "github_users" {
       username          = "matyasjay"
       organization_role = "member"
       teams = [
+        {
+          team      = "team-one-beyond-employees"
+          team_role = "member"
+        },
       ]
     },
     {
