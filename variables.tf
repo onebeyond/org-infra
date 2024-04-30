@@ -21,20 +21,6 @@ variable "github_users" {
   }))
   default = [
     {
-      username          = "acalvom"
-      organization_role = "member"
-      teams = [
-        {
-          team      = "team-one-beyond-employees"
-          team_role = "member"
-        },
-        {
-          team      = "team-shieldjs"
-          team_role = "member"
-        }
-      ]
-    },
-    {
       username          = "aldorea"
       organization_role = "member"
       teams = [
@@ -220,20 +206,6 @@ variable "github_users" {
       ]
     },
     {
-      username          = "brynhorsfield-ob"
-      organization_role = "member"
-      teams = [
-        {
-          team      = "team-obelisk"
-          team_role = "member"
-        },
-        {
-          team      = "team-obelisk-maintainers"
-          team_role = "member"
-        }
-      ]
-    },
-    {
       username          = "carpasse"
       organization_role = "member"
       teams = [
@@ -404,38 +376,6 @@ variable "github_users" {
       ]
     },
     {
-      username          = "fabiomaistro"
-      organization_role = "member"
-      teams = [
-        {
-          team      = "team-one-beyond-employees"
-          team_role = "member"
-        },
-        {
-          team      = "team-obelisk"
-          team_role = "member"
-        }
-      ]
-    },
-    {
-      username          = "Franky-OB"
-      organization_role = "member"
-      teams = [
-        {
-          team      = "team-one-beyond-employees"
-          team_role = "member"
-        },
-        {
-          team      = "team-react-form-builder"
-          team_role = "member"
-        },
-        {
-          team      = "team-shieldjs"
-          team_role = "member"
-        }
-      ]
-    },
-    {
       username          = "GentooXativa"
       organization_role = "member"
       teams = [
@@ -594,20 +534,6 @@ variable "github_users" {
       ]
     },
     {
-      username          = "JEBurnard-OneBeyond"
-      organization_role = "member"
-      teams = [
-        {
-          team      = "team-one-beyond-employees"
-          team_role = "member"
-        },
-        {
-          team      = "team-obelisk-maintainers"
-          team_role = "member"
-        }
-      ]
-    },
-    {
       username          = "jgleal"
       organization_role = "member"
       teams = [
@@ -681,20 +607,6 @@ variable "github_users" {
       teams = [
         {
           team      = "team-react-form-builder"
-          team_role = "member"
-        }
-      ]
-    },
-    {
-      username          = "juliusone"
-      organization_role = "member"
-      teams = [
-        {
-          team      = "team-one-beyond-employees"
-          team_role = "member"
-        },
-        {
-          team      = "team-obelisk-maintainers"
           team_role = "member"
         }
       ]
@@ -1092,20 +1004,6 @@ variable "github_users" {
       teams = [
         {
           team      = "team-obelisk"
-          team_role = "member"
-        }
-      ]
-    },
-    {
-      username          = "totegsito"
-      organization_role = "member"
-      teams = [
-        {
-          team      = "team-one-beyond-employees"
-          team_role = "member"
-        },
-        {
-          team      = "team-coding-challenges"
           team_role = "member"
         }
       ]

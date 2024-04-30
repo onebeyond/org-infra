@@ -155,6 +155,8 @@ module "agnostic-cms-harmonizer" {
     visibility           = "public"
     vulnerability_alerts = true
     homepage_url         = "https://onebeyond.github.io/agnostic-cms-harmonizer/"
+    has_projects         = false
+    has_wiki             = true
     pages = {
       source = {
         branch = "gh-pages"
